@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+	<h1>Login</h1>
+	<div>
+		Username:<br>
+		<input type="text" name="username" id="username">
+		<br>
+		<br>
+		Password:<br>
+		<input type="password" name="password" id="password">
+		<br><br>
+       <button onclick="login()">Submit</button>
+	</div>	
+
+	<script type="text/javascript">
+
+	function login() 
+	{
+		var uname= document.getElementById('username').value; 
+		var pass= document.querySelector('#password').value;  
+
+
+
+		if(uname=="pn" && pass=="123")
+		{
+			window.alert("login Success")
+		}
+		else
+		{
+			window.alert("login failed")
+		}	
+
+	}
+</script>
+
+</body>
+</html>
+
